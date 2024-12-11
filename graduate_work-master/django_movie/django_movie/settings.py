@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'allauth.account.middleware.AccountMiddleware',  # Добавь эту строку
 ]
 
 ROOT_URLCONF = 'django_movie.urls'
@@ -211,3 +212,5 @@ CKEDITOR_CONFIGS = {
 }
 
 SITE_ID = 1
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

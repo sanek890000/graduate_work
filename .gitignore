@@ -1,2 +1,3 @@
 /.venv/
-C:\Users\Адександр\PycharmProjects\My project\.venv
+*__pycache__/
+db.sqlite3
