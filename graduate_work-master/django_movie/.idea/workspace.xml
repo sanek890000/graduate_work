@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77867963-11e9-46a5-8152-ec5439a914fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/212.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/212.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../db_212.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../db_212.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/devsearch/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/styles/modules/_alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/styles/modules/_alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/styles/uikit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/static/uikit/styles/uikit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/templates/projects/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fouth/devsearch/projects/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../fouth/devsearch/projects/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/personal_portfolio/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../second/personal_portfolio/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/personal_portfolio/skills/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../second/personal_portfolio/skills/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todo/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todo/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/currenttodos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/currenttodos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/viewtodo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todo/templates/todo/viewtodo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todos/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third/todos/todos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../third/todos/todos/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2U15zeiWo6piNlXQ7QM5lulYAxi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77867963-11e9-46a5-8152-ec5439a914fb" name="Changes" comment="" />
+      <created>1692094511981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692094511981</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

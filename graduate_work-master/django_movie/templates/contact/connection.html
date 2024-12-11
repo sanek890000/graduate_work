@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="full-screen-image-container" style="position: relative;">
+    <div class="full-screen-image" style="position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         right: 0;
+                                         bottom: 0;
+                                         background-image: url(&quot;../static/2.jpg&quot;);
+                                         background-size: cover;
+                                         background-repeat: no-repeat;
+                                         background-position: center center;"></div>
+    <div class="content-overlay" style="position: relative;
+                                       padding: 20px;
+                                       background-color: rgba(255, 255, 255, 0.5);">
+<form method="post" class="connection" style="background-image: url(&quot;../static/2.jpg&quot;);background-size: cover;
+                         background-repeat: no-repeat;
+                         background-position: center center;">
+<h1 class="center-align">{{ title }}</h1>
+
+{% if success_message %}
+  <div class="center-align">
+    <p>{{ success_message }}</p>
+    <div class="hover-effect-button"><a href="{% url 'about' %}" class="hover-effect-button">OK</a></div>
+  </div>
+</form>
+{% else %}
+  <form method="post" class="connection">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="connection">Отправить</button>
+  </form>
+{% endif %}
+
+{% endblock content %}
+</div>
+</div>

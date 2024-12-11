@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+{% load static %}
+{% load movie_tag %}
+<html lang="ru">
+<head>
+    <title>{% block title %}Главная страница{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700"
+          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900"
+          rel="stylesheet">
+    <style>
+        /* Existing styles here */
+
+        /* New animation styles */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #000;
+            transition: transform 0.3s ease;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Style for "one" section */
+        .one {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f2f2f2;
+        }
+
+        .one h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #625f5f;
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Style for content block */
+      .content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 38px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    max-height: 700px; /* фиксированная максимальная высота */
+    overflow: hidden; /* Скрыть лишнее содержимое, если оно не помещается */
+}
+
+        .text-content {
+        flex: 1;
+        padding: 20px;
+        border: 2px solid #000;
+        animation: fadeInRight 1s ease;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        background-size: cover; /* Масштабирование фонового изображения */
+        background-position: center; /* Позиционирование фонового изображения */
+        color: #fff; /* Цвет текста на голубом фоне */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+        /* Additional styles for one1 section */
+        .one1 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="page" class="page" style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(../static/небо.jpg);">
+    <div class="main-banner bg bg1" id="home"
+         style="background-color: rgba(0, 0, 0, 0); margin-top: 0px; background-image: url(../static/6.jpg);">
+        {% include 'include/header.html' %}
+    </div>
+    <ol class="breadcrumb editContent">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}" class="editContent">Главная</a>
+        </li>
+        <li class="breadcrumb-item active editContent"><a href="{% url 'about' %}">О нас</a></li>
+    </ol>
+    <div class="one">
+        <h2>Популярные аниме</h2>
+
+        <div class="image-grid">
+            <div class="image" data-href="{% url 'movie_detail' 'noragami' %}">
+                <img src="{% static 'images/1.jpg' %}" alt="Image 1">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'Iruma' %}">
+                <img src="{% static 'images/2.jpg' %}" alt="Image 2">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'naruto' %}">
+                <img src="{% static 'images/3.jpg' %}" alt="Image 3">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'kuroko_basketball' %}">
+                <img src="{% static 'images/4.jpg' %}" alt="Image 4">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'seven_deadly_sins' %}">
+                <img src="{% static 'images/5.jpg' %}" alt="Image 4">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'magic_and_muscles' %}">
+                <img src="{% static 'images/11.jpeg' %}" alt="Image 4">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'blade_that_cuts_demons' %}">
+                <img src="{% static 'images/6.jpeg' %}" alt="Image 4">
+            </div>
+            <div class="image" data-href="{% url 'movie_detail' 'sword_masters_online' %}">
+                <img src="{% static 'images/7.jpeg' %}" alt="Image 4">
+            </div>
+        </div>
+    </div>
+    <div class="one1">
+        <div class="content-block">
+            <div class="text-content">
+                {{ flatpage.content|safe }}
+            </div>
+        </div>
+        <div class="image-grid">
+            {% get_last_movies count=6 %}
+            {% for movie in last_movies %}
+                <div class="image">
+                    <img src="{{ movie.image.url }}" alt="{{ movie.title }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include 'include/footer.html' %}
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const imageElements = document.querySelectorAll(".image[data-href]");
+
+        imageElements.forEach(function(imageElement) {
+            imageElement.addEventListener("click", function() {
+                const href = imageElement.getAttribute("data-href");
+                if (href) {
+                    window.location.href = href;
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

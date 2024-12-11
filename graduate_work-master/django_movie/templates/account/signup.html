@@ -1,0 +1,40 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<div class="full-screen-image-container" style="position: relative;">
+    <div class="full-screen-image" style="position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         right: 0;
+                                         bottom: 0;
+                                         background-image: url('/static/7.jpg');
+                                         background-size: cover;
+                                         background-repeat: no-repeat;
+                                         background-position: center center;"></div>
+    <div class="content-overlay" style="position: relative;
+                                       padding: 20px;
+                                       background-color: rgba(255, 255, 255, 0.5);">
+
+
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" style="background-image: url('/static/7.jpg');
+        background-size: cover;
+                         background-repeat: no-repeat;
+                         background-position: center center;">
+          <h1>{% trans "Sign Up" %}</h1>
+
+        <p class="center-align">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+        </form>
+
+{% endblock %}
+    </div>
+</div>
